@@ -14,4 +14,4 @@ To run the code - dotnet run path-to-input-file-name
 In case of UnitTest Cases, the tests are passing the input as a string.
 
 ## Run Unit Tests
-Run the command - dotnet test
+Run the command - dotnet test --logger:"console;verbosity=detailed"
