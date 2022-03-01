@@ -21,6 +21,7 @@ namespace UnitTests
             var objListResultSummary = objSoccerRanking.ResultSummary(result);
 
             Assert.AreEqual(objListResultSummary[0].TeamName, "Tarantulas", "The winner is Tarantulas");
+            Console.WriteLine("Test Case Name - TestValidGames. Result Pass - The winner is Tarantulas");
         }
         [TestMethod]
         public void TestMultipleWinners()
@@ -35,6 +36,7 @@ namespace UnitTests
             var objListResultSummary = objSoccerRanking.ResultSummary(result);
 
             Assert.IsTrue(objListResultSummary[0].Rank == 1 && objListResultSummary[1].Rank == 1, "We have multiple winners");
+            Console.WriteLine("Test Case Name - TestMultipleWinners. Result Pass - We have multiple winners");
         }
 
         [TestMethod]
@@ -50,6 +52,7 @@ namespace UnitTests
             var objListResultSummary = objSoccerRanking.ResultSummary(result);
 
             Assert.IsTrue(objListResultSummary[2].Rank == 3 && objListResultSummary[2].Rank == 3, "Two teams with same points has the same ranks");
+            Console.WriteLine("Test Case Name - TestSameRank. Result Pass - Two teams with same points has the same ranks");
         }
 
         [TestMethod]
@@ -77,6 +80,7 @@ namespace UnitTests
 
             //Validate that new winner is Lions
             Assert.AreEqual(objListResultSummary[0].TeamName, "Lions", "The winner is Lions");
+            Console.WriteLine("Test Case Name - TestRankChangedAfterAValidMatch. Result Pass - The winner is Lions");
         }
 
         [TestMethod]
@@ -92,6 +96,7 @@ namespace UnitTests
             var objListResultSummary = objSoccerRanking.ResultSummary(result);
 
             Assert.IsTrue(objListResultSummary.Count == 0, "There are no matches played");
+            Console.WriteLine("Test Case Name - TestNoMatchPlayed. Result: Pass - There are no matches played");
         }
     }
 }
