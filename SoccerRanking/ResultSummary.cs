@@ -30,7 +30,12 @@ namespace SoccerRanking
 
         public override string ToString()
         {
-            return Rank + "." + " " + TeamName + ", " + " " + Points + "pts";
+            string strPoints = "pt";
+            if (Points > 1)
+            {
+                strPoints = "pts";
+            }
+            return Rank + "." + " " + TeamName + ", " + " " + Points + " " + strPoints;
         }
     }
 }

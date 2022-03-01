@@ -1,5 +1,0 @@
-Lions 4, Snakes 3
-Tarantulas 1, FC Awesome 0
-Lions 3, FC Awesome 1
-Tarantulas 3, Snakes 1
-Lions 0, Grouches 1
